@@ -1,0 +1,1 @@
+An experimental alternative of TeX/pdfcrop tool
