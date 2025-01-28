@@ -1,6 +1,6 @@
 [project]
 name = "pdfcrop-cli"
-version = "0.2.0"
+version = "0.2.1"
 authors = [{ name = "Jiadong He", email = "jiadonghe007@gmail.com" }]
 description = "An experimental alternative of TeX/pdfcrop tool"
 readme = "README.md"
