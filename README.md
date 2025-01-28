@@ -8,6 +8,11 @@ An experimental alternative of TeX/pdfcrop tool
 pip install git+https://github.com/Jordan-Haidee/pdfcrop.git
 ```
 
+## Install from PyPI
+```shell
+pip install pdfcrop-cli
+```
+
 ## Usage
 
 ```shell
