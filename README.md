@@ -16,15 +16,20 @@ pip install pdfcrop-cli
 ## Usage
 
 ```shell
-$ pdfcrop --help
-usage: pdfcrop [-h] --input INPUT [--output OUTPUT]
+$ pdfcrop.exe --help
+usage: pdfcrop [-h] [OPTIONS]
 
-An experimental alternative of TeX/pdfcrop tool
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --input INPUT, -i INPUT
-  --output OUTPUT, -o OUTPUT
+╭─ options ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮  
+│ -h, --help              show this help message and exit                                                                                        │  
+│ --input PATH, -i PATH   The input pdf file. (required)                                                                                         │  
+│ --output {None}|PATH, -o {None}|PATH                                                                                                           │  
+│                         The output path. (default: None)                                                                                       │  
+│ --pages {None}|{[INT [INT ...]]}                                                                                                               │  
+│                         The page numbers to crop. None denotes all pages. (default: None)                                                      │  
+│ --margins {None}|{[INT [INT ...]]}                                                                                                             │  
+│                         The margins to reserve. None denotes all 0. If one number is given, it will be applied to four borders. (default:      │  
+│                         None)                                                                                                                  │  
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ 
 ```
 
 You can use `examples/example.pdf` to test whether pdfcrop works.
