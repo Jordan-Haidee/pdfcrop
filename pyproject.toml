@@ -1,9 +1,16 @@
 [project]
-name = "pdfcrop"
+name = "pdfcrop-cli"
 version = "0.1.0"
-description = "Add your description here"
+authors = [{ name = "Jiadong He", email = "jiadonghe007@gmail.com" }]
+description = "An experimental alternative of TeX/pdfcrop tool"
 readme = "README.md"
 requires-python = ">=3.9"
+license = "AGPL-3.0"
+license-files = ["LICENSE"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
 dependencies = ["pymupdf>=1.25.2"]
 
 [[tool.uv.index]]
