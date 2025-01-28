@@ -1,24 +1,27 @@
 [project]
 name = "pdfcrop-cli"
-version = "0.1.0"
+version = "0.2.0"
 authors = [{ name = "Jiadong He", email = "jiadonghe007@gmail.com" }]
 description = "An experimental alternative of TeX/pdfcrop tool"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = "AGPL-3.0"
 license-files = ["LICENSE"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-dependencies = ["pymupdf>=1.25.2"]
+dependencies = ["pymupdf>=1.25.2", "tyro>=0.9.13"]
+
+[project.scripts]
+pdfcrop = "src.main:_main"
 
 [[tool.uv.index]]
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 default = true
 
-[project.scripts]
-pdfcrop = "src.main:main"
+[tool.ruff.lint]
+extend-select = ["I0"]
 
 [build-system]
 requires = ["hatchling"]
